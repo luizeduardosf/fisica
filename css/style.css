@@ -329,12 +329,12 @@ nav ul {
 
 @media (max-width: 480px) {
     .container { padding: 15px; }
-    .content { flex-direction: column-reverse; gap: 25px; text-align: left; }
-    .left, .right { width: 100%; text-align: left; }
-    .right img { width: 100%; max-width: 240px; margin: 0 auto; }
+    .content { flex-direction: column-reverse; gap: 0px; text-align: left; }
+    .left-hero, .right-hero { width: 100%; text-align: left; }
+    .right-hero img { max-width: 65vw; margin: 0 auto; padding-bottom: 0;}
     nav ul { gap: 12px; font-size: 11px; }
-    .footer { flex-direction: column; gap: 10px; height: auto; text-align: center; margin-bottom: 30px; }
-    h1 { margin-left: 0; font-size: clamp(42px, 12vw, 72px); line-height: clamp(36px, 10vw, 60px); }
+    .footer { flex-direction: column; gap: 0px; height: auto; text-align: center; margin-bottom: 30px; }
+    h1 { margin-left: 0; font-size: clamp(42px, 12vw, 72px); line-height: clamp(36px, 10vw, 60px); padding-bottom: 0;}
 }
 
 /* MOBILE GRANDE / TABLET VERTICAL (481–768px) */
@@ -342,8 +342,8 @@ nav ul {
 @media (min-width: 481px) and (max-width: 768px) {
     .container { padding: 20px;}
     .content { flex-direction: column-reverse; gap: 0px;}
-    .left, .right { width: 100%;}
-    .right img {margin: 0 auto; }
+    .left-hero, .right-hero { width: 100%;}
+    .right-hero img {margin: 0 auto; max-width: 65vw;}
     nav ul { gap: 18px; font-size: 12px; }
     .footer { flex-direction: column; height: auto; gap: 0; margin-top: 10px; margin-bottom: 30px;}  
 }
@@ -353,8 +353,8 @@ nav ul {
 @media (min-width: 769px) and (max-width: 1280px) {
     .container { padding: 30px 40px; }
     .content { gap: 30px; }
-    .left { width: 65%; }
-    .right { width: 35%; }
+    .left-hero { width: 65%; }
+    .right-hero { width: 35%; }
     .right img { max-width: 320px; }
     nav ul { gap: 28px; }
 }
